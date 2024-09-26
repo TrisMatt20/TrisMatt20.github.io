@@ -107,3 +107,7 @@ h2 {
     font-size: 1em;
     color: #333;
 }
+
+.project h1 {
+    font-size: 20px;
+}
