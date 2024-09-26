@@ -1,4 +1,90 @@
 .nav-bar {
     background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    }
     
+.nav-bar img {
+        height: 150px; 
+        margin-left: 10px; 
+    }
+    
+.nav-bar h1 {
+        margin: 0 auto; 
+        font-size: 50px; 
+        color: aliceblue;
+    }
+    
+.title h1 {
+    margin-inline-start: 50px;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 60px;
 }
+
+.title h4 {
+    text-align: center;
+    font-family: Gill Sans;
+    font-size: 30px;
+}
+
+.info-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0;
+}
+
+.info-1 img{
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.info-1 p {
+    flex-grow: 1;
+    margin: 0;
+    font-family: Segoe UI;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.info-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.info-2 img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.info-2 b {
+    display: block;
+    justify-content: top;
+    margin-bottom: 10px;
+    font-family: Segoe UI;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.info-2 p {
+    flex-grow: 1;
+    margin: 0;
+    font-family: Gill Sans;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+
+
+
+
