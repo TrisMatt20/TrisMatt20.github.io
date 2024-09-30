@@ -90,6 +90,7 @@ h2 {
     margin-bottom: 100px;
 }
 
+
 .project {
     display: flex;
     flex-direction: column;
@@ -111,3 +112,4 @@ h2 {
 .project h1 {
     font-size: 20px;
 }
+
