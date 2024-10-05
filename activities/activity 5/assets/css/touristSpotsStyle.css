@@ -1,0 +1,98 @@
+.container-fluid {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+.nav-link {
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+.nav-link::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: white; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: yellow; 
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); 
+}
+
+img:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+} 
+
+.city, .tabName, .titleLingo {
+    text-align: center; 
+    padding-top: 10px;
+    font-family: Segoe UI;
+    font-weight: 400px;
+}
+
+.tabName {
+    font-style: oblique;
+}
+
+.burjKhalifa, .dubaiMall {
+    font-style: bold;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+.row {
+    overflow-x: hidden;
+}
+
+.aboutBK {
+    color: #000;
+    text-align: justify;
+    font-family: Roboto; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    padding: 20px 10px; 
+    padding-top: 0;
+    margin: 30px 30px
+}
+
+.aboutBKInfo , .dubaiMallInfo{
+    color: #000;
+    text-align: justify;
+    font-family: Roboto; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    padding: 20px 10px; 
+    padding-top: 0;
+    margin: 30px 30px
+}
+
+img {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.row:nth-of-type(2) {
+    margin-top: -20px;
+}
+
+.footer {
+    text-align: center;
+    
+}
