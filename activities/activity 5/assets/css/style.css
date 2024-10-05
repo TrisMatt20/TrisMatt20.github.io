@@ -1,0 +1,87 @@
+.container-fluid {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+.profile {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    padding-top: 10px;
+}
+
+body {
+    overflow-x: hidden;
+}
+.titleCity, .titleCountry, .why, .facts {
+    text-align: center; 
+    padding-top: 10px;
+    font-family: Segoe UI;
+    font-weight: 400px;
+}
+
+img:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+} 
+
+
+.dubaiInfo, .whyInfo, .factsInfo {
+    color: #000;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    padding: 20px 15px; 
+    margin: 30px 30px
+}
+
+.titleCountry {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .dubaiInfo, .whyInfo, .factsInfo {
+        font-size: 0.9rem; 
+        padding-left: 10px; 
+        padding-right: 10px; 
+    }
+}
+
+.footer {
+    text-align: center;
+} 
+
+.nav-item-custom {
+    margin-right: 15px; 
+}
+
+.nav-link {
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+.nav-link::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: white; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: yellow; 
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); 
+}
+
