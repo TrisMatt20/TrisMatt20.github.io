@@ -1,0 +1,42 @@
+.BINI-logo img{
+    max-width: 75px;
+}
+
+.nav-item {
+    font-family: Roboto;
+    font-style: bold;
+    font-size: 20px;
+}
+
+.header {
+width: 100%;
+height: auto;
+overflow-x: hidden;
+position: relative;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    top: 0; 
+    display:block;
+}
+
+@media (max-width: 768px) {
+    .BINI {
+        text-align: center; 
+    }
+
+    .name, .birthday {
+        text-align: center; 
+    }
+}
+
+.pics img {
+    max-width: 100%;  
+    height: auto;     
+}
+
+
