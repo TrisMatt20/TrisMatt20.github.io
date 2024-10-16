@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-transparent">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="BINI-logo" href="#">
                 <img src="assets/img/logo and header pics/BINI_logo.svg.png" alt="logo">
@@ -52,12 +52,12 @@
         <div class="row my-4">
             <div class="col">
                 <h1 class="title" style="font-family: Arial; text-align: left;">
-                    What is BINI?
+                    <br>What is BINI?
                 </h1>
             </div>
             <div class="col-8">
-                <p class="lh-1" style="font-family: Roboto; text-align: justify;">
-                    BINI is a rising Philippine-POP (PPOP) girl group. BINI features 8 multi-talented
+                <p class="lh-1" style="font-family: Roboto; text-align: justify; font-size: 16px;">
+                    <br><br>BINI is a rising Philippine-POP (PPOP) girl group. BINI features 8 multi-talented
                     members, Aiah, Colet, Maloi, Gwen, Stacey, Mikha, Jhoanna, and Sheena. The girls have quickly become
                     the biggest female Filipino artist in history, and second biggest artist overall in the Philippines,
                     holding both the #1 & #2 spots on the top Filipino music charts simultaneously with the hits
@@ -78,42 +78,99 @@
             </div>
         </div>
         <div class="container-fluid" id="members">
-            <div class="row">
+            <div class="row my-4">
                 <div class="col-md-4 col-12">
-                    <div class="pics my-4 text-center">
-                        <img src="assets/img/highlight pictures/jhoanna-hp.png" alt="Jhoanna">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/img/highlight pictures/mikha-hp.png" class="d-block w-100"
+                                    alt="BINI Mikha" id="mikha">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/highlight pictures/maloi-hp.png" class="d-block w-100"
+                                    alt="BINI Maloi" id="maloi">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/highlight pictures/aiah-hp.png" class="d-block w-100"
+                                    alt="BINI Aiah" id="miah">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/highlight pictures/gwen-hp.png" class="d-block w-100"
+                                    alt="BINI Gwen" id="gwen">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/highlight pictures/sheena-hp.png" class="d-block w-100"
+                                    alt="BINI Sheena" id="sheena">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/highlight pictures/stacey-hp.png" class="d-block w-100"
+                                    alt="BINI Stacey" id="stacey">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/highlight pictures/colet-hp.png" class="d-block w-100"
+                                    alt="BINI Colet" id="colet">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/img/highlight pictures/jhoanna-hp.png" class="d-block w-100"
+                                    alt="Bini Jhoanna" id="jhoanna">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
                 <div class="col-md-6 col-12 my-md-5 my-3">
                     <h1 class="BINI" style="color: #dd228c; font-family: Arial; font-style: bold; text-align: left;">
                         BINI
                     </h1>
-                    <h3 class="name my-3" style="font-family:Roboto;" id="names">
-                        Name:
+                    <h3 class="first-name my-3" style="font-family:Roboto; font-size: 30px; font-weight: 100px;"
+                        id="fnames">
+                        MIKHA
                     </h3>
-                    <h3 class="birthday my-3" style="font-family:Roboto;" id="birthdays">
-                        Birthday:
-                    </h3>
+                    <h5 class="name my-3" style="font-family:Roboto;" id="names">
+                        <br><b>Name:</b> Mikhaela Janna Lim
+                    </h5>
+                    <h5 class="birthday my-3" style="font-family:Roboto;" id="birthdays">
+                        <b>Birthday:</b> November 8, 2003
+                    </h5>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row my-4">
+                <div class="col col-md-4 col-12">
+                    <h1 class="discography" style="font-family: Arial; text-align: left;">
+                        <br>Discography
+                    </h1>
+                    <div class="col-md-6 col-12 my-md-5 my-5" style="padding: 10px; align-content: center;">
+                        <img src ="assets/img/discographies/album-talaarawan.png" alt="talaarawan" id = "album1">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
-    <script>
-        var names = ["Mikhaela Janna Lim", "Mary Loi Yves Ricalde", "Maraiah Queen Arceta", "Gweneth L. Apuli", "Sheena Mae Catacutan", "Stacey Aubrey Sevilleja", "Ma. Nicollete Vergara", "Jhoanna Christine Robles"];
-    </script>
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="assets/JS/index.js"></script>
 </body>
 
 </html>

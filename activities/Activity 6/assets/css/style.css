@@ -2,6 +2,10 @@
     max-width: 75px;
 }
 
+.navbar {
+    background-color: transparent !important;
+}
+
 .nav-item {
     font-family: Roboto;
     font-style: bold;
@@ -18,9 +22,10 @@ position: relative;
 .header img {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     position: relative;
-    top: 0; 
+    margin-top: 0; 
+    z-index: -1;
     display:block;
 }
 
@@ -39,4 +44,9 @@ position: relative;
     height: auto;     
 }
 
+.hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    border: 1px solid #dd228c; 
+}
 
