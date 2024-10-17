@@ -12,40 +12,31 @@
     <link rel="icon" href="assets/img/logo and header pics/flower.ico" type="image/x-icon">
 </head>
 
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="BINI-logo" href="#">
-            <img src="assets/img/logo and header pics/BINI_logo.svg.png" alt="logo" height="40">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#members">Members</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#discography">Discography</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#videos">Videos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#theme">Theme</a>
-                </li>
-            </ul>
+<body id="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light data-bs-theme">
+        <div class="container-fluid">
+            <a class="BINI-logo" href="#">
+                <img src="assets/img/logo and header pics/flower-logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <nav>
+                        <li class="nav-item" id="btnTheme" onclick="changeColorMode(event)">
+                            <a class="nav-link" href="#theme" id="themeLink">Dark Mode</a>
+                        </li>
+                    </nav>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+
 
     <div class="header">
         <img src="assets/img/logo and header pics/BINI-header.JPG" alt="header">
@@ -212,14 +203,17 @@
 
     <div class="container">
         <footer class="py-3 my-4">
-          <p class="text-center text-body-secondary">© 2024 All Rights Reserves to ABS-CBN</p>
+            <p class="text-center text-body-secondary">Designed by Tristan Matthew Matencio</p>
+            <p class="text-center text-body-secondary">© 2024 All Rights Reserves to ABS-CBN</p>
+            <p class="text-center text-body-secondary">BSIT 3-1</p>
         </footer>
-      </div>
+    </div>
 
 
 
 
     <script>
+        // header album
         var pics = ["OT8-2.JPG", "OT8-3.JPG", "OT8-4.JPG", "OT8-5.JPG"];
 
         var myContainer = document.getElementById("imgContainer");
@@ -236,6 +230,7 @@
             document.getElementById(id).classList.remove("hover");
         }
 
+        // Expand and collapase content
         var images = [
             "Aiah-2.JPG",
             "Colet-3.JPG",
@@ -246,7 +241,6 @@
             "Sheena-1.JPG",
             "Stacey-4.JPG"
         ];
-
 
         var display = "none";
 
@@ -270,7 +264,6 @@
                     img.className = "img-thumbnail";
                     img.style.margin = "5px";
 
-                    // Add hover event listeners
                     img.addEventListener("mouseover", function () {
                         addHover(this.id);
                     });
@@ -282,7 +275,6 @@
                     imageRow.appendChild(colDiv);
                 }
 
-
                 $(collapse).collapse('show');
                 display = "block";
                 btnShow.innerHTML = "Show less";
@@ -293,6 +285,21 @@
             }
         }
 
+        // Dark Mode
+        var colorMode = "light";
+
+        function changeColorMode(event) {
+            event.preventDefault();
+            if (colorMode === "light") {
+                document.getElementById("body").setAttribute("data-bs-theme", "dark");
+                document.getElementById("themeLink").innerHTML = "Light Mode";
+                colorMode = "dark";
+            } else {
+                document.getElementById("body").setAttribute("data-bs-theme", "light");
+                document.getElementById("themeLink").innerHTML = "Dark Mode";
+                colorMode = "light";
+            }
+        }
     </script>
 
 
