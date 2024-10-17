@@ -164,3 +164,9 @@
     padding: 5px 10px;
 }
 
+#buttonContainer {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 10px; /* Adds space between the buttons */
+}
+

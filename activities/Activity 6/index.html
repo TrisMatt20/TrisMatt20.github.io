@@ -156,63 +156,126 @@
             </div>
         </div>
 
-        <!-- https://pbs.twimg.com/media/GMLTjTUWsAAjH2a?format=jpg&name=large
-        https://i.pinimg.com/736x/a5/1e/cb/a51ecb16aa1d5515c692d69bf47cccc1.jpg -->
-
-        <div class="container-fluid">
-            <div class="row g-0">
+        <div class="container">
+            <div class="row mt-5">
                 <div class="col">
-                    <div class="gallery">
-                        <h1 class="title">
-                            Gallery
-                        </h1>
-                    </div>
+                    <h1 class="title" style="font-family: Arial;">Gallery</h1>
                 </div>
             </div>
-            <div class="row" id="picContainer">
-                <div class="col">
-                    <div class="pictures">
-                        <img src="assets/img/gallery/OT8/members/OT8-1.png" class="rounded float-start" alt="..."
-                             style="width: 400px;" id="pic1" 
-                             onmouseenter="addShadow('pic1');" 
-                             onmouseleave="removeShadow('pic1');">
-                             
-                        <img src="assets/img/gallery/OT8/members/OT8-2.png" class="rounded float-end" alt="..." id="pic2" 
-                             onmouseenter="addShadow('pic2');" 
-                             onmouseleave="removeShadow('pic2');">
-                    
-                        <img src="assets/img/gallery/OT8/members/OT8-3.JPG" class="rounded float-start" alt="..."
-                             style="width: 400px; margin-top: 5px;" onmouseenter="addShadow('pic3');" onmouseleave="removeShadow('pic3');">
-                    
-                        <img src="assets/img/gallery/OT8/members/OT8-4.JPG" class="rounded float-end" alt="..."
-                             style="width: 690px; margin-top: 5px;" id="pic3" 
-                             onmouseenter="addShadow('pic3');" 
-                             onmouseleave="removeShadow('pic3');">
-                    
-                        <img src="assets/img/gallery/OT8/members/OT8-5.JPG" class="rounded float-end" alt="..."
-                             style="width: 395px; margin-top: 5px; margin-right: 5px;" onmouseenter="addShadow('pic3');" 
-                             onmouseleave="removeShadow('pic3');">
-                    </div>
+            <!-- This is where the JS appends the card components -->
+            <div class="row g-0" id="imgContainer">
+                <div class="col-xl-3 col-md-4 col-sm-6 col-12" onmouseenter="addHover(1);"
+                    onmouseleave="removeHover(1);" id="1">
+                    <img src="assets/img/gallery/OT8/members/OT8-1.JPG" class="img-fluid" alt="...">
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary" id="btnShow" onclick="expandContent()"
+                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; position: relative; top: -20px;">
+                            Show more
+                        </button>
+                    </div>
+
+                    <!-- Calls the expandContent() JS function (line 99) -->
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="Video">
+                    <h1 class="title">
+                        Videos
+                    </h1>
+                </div>
+                <div class="col">
+                    <iframe width="1273" height="800" src="https://www.youtube.com/embed/J1Ip2sC_lss" target="_blank" 
+                    title="BINI | 'Salamin, Salamin' Official Music Video" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                  <p class="col-md-4 mb-0 text-body-secondary">© All Rights Reserved to ABS-CBN • 2024 </p>
+              
+                  <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  </a>
+              
+                  <ul class="nav col-sm-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Members</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Discography</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Gallery</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Videos</a></li>
+                  </ul>
+                </footer>
+              </div>
+        </footer>
+        
+        
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        <script>
+            var pics = ["OT8-2.JPG", "OT8-3.JPG", "OT8-4.JPG"];
+
+            var myContainer = document.getElementById("imgContainer");
+
+            for (var i = 0; i < pics.length; i++) {
+                // Create a new div with Bootstrap column classes
+                myContainer.innerHTML += ` <div class="col-xl-3 col-md-4 col-sm-6 col-12" onmouseenter="addHover(${i + 1});" onmouseleave="removeHover(${i + 1});" id="${i + 1}">
+                <img src="assets/img/gallery/OT8/members/${pics[i]}" class="img-fluid" alt="..."></div>`;
+            }
+            function addHover(id) {
+                document.getElementById(id).classList.add("hover");
+            }
+
+            function removeHover(id) {
+                document.getElementById(id).classList.remove("hover");
+            }
+
+            // Switch between display none and block
+            var display = "none";
+            function expandContent() {
+                var footer = document.getElementById("footer");
+                var btnExpand = document.getElementById("btnExpand");
+
+                if (display == "none") {
+                    footer.style.display = "block";
+                    display = "block";
+                    btnExpand.innerHTML = "Collapse";
+                } else {
+                    footer.style.display = "none";
+                    display = "none";
+                    btnExpand.innerHTML = "Show less";
+                }
+            }
         </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="assets/JS/index.js"></script>
-    <script src="assets/JS/discography.js"></script>
-    <script src="assets/JS/gallery.js"></script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+        <script src="assets/JS/index.js"></script>
+        <script src="assets/JS/discography.js"></script>
+        <script src="assets/JS/gallery.js"></script>
 </body>
 
 </html>
