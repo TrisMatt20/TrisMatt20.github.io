@@ -1,47 +1,51 @@
 #body {
-    background-color: #262949; 
+    background-color: #262949;
 }
 
 @font-face {
-    font-family: 'Marvel2'; 
+    font-family: 'Marvel2';
     src: url("assets/fonts/marvel 2.otf") format('truetype');
 }
 
 @font-face {
-    font-family: 'MarvelRegular'; 
+    font-family: 'MarvelRegular';
     src: url("assets/fonts/Marvel-Regular.ttf") format('truetype');
 }
 
 @font-face {
-    font-family: 'TheMightyAvengers'; 
+    font-family: 'TheMightyAvengers';
     src: url("assets/fonts/TheMightyAvengers.ttf") format('truetype');
 }
 
 .custom-navbar {
-    background-color: #323A95 !important; 
+    background-color: #323A95 !important;
 }
 
 .navbar-nav .nav-link {
-    color: white; 
+    color: white;
 }
+
 .navbar-brand {
-    color: white; 
+    color: white;
 }
 
 .heading {
     font-family: Arial, Helvetica, sans-serif, serif;
-    color: white; 
-    text-align: center; 
-}
-
-footer {
     color: white;
+    text-align: center;
 }
 
-footer .nav-link {
-    color: white !important;
+.carousel-inner {
+    position: relative; 
+    width: 100%; 
+    max-height: 800px; 
+    overflow: hidden; 
 }
 
-footer  p {
-    color: white !important;
+.carousel-inner img {
+    margin-top: 20px;
+    width: 100%; 
+    height: auto;
+    max-height: 800px; 
+    object-fit: cover; 
 }
