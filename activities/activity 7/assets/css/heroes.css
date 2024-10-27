@@ -63,3 +63,8 @@
     }
 }
 
+.badge.active {
+    background-color: red; 
+    color: white; 
+  }
+  

@@ -36,16 +36,8 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col heading" style="font-size: 45px;">
+      <div class="col heading mt-5" style="font-size: 45px;">
         Get to know your Heroes and Villains!
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col text-center" style="width: 500px">
-        <span class="badge rounded-pill text-bg-primary" id="all" onclick="showAll()">All</span>
-        <span class="badge rounded-pill text-bg-primary" id="marvel" onclick="showMarvel()">Marvel</span>
-        <span class="badge rounded-pill text-bg-primary" id="dc" onclick="showDC()">DC</span>
-        <span class="badge rounded-pill text-bg-primary" id="others" onclick="showOthers()">Others</span>
       </div>
     </div>
   </div>
@@ -57,22 +49,7 @@
     </div>
   </div>
   </div>
-  <div class="container">
-    <div class="row my-5">
-      <div class="col">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-            <li class="page-item">
-              <a class="page-link" onclick="prevPage()">Previous</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" onclick="nextPage()">Next</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
+
 
   <footer class="py-3 my-4">
     <div class="footer">
@@ -85,20 +62,20 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  
+
   <script>
     var cardContainer = document.getElementById("cardContainer");
     var page = 1;
-  
+
     const loadCharacter = async () => {
-      var baseline = 1 + ((page - 1) * 30);
-      var characterCount = baseline + 29;
-  
+      var baseline = 1 + ((page - 1) * 547);
+      var characterCount = baseline + 546;
+
       for (var i = baseline; i <= characterCount; i++) {
         try {
           const response = await fetch('https://www.superheroapi.com/api.php/b21d5ebe816f4c781205bf9c6ef98ed2/' + i);
           const character = await response.json();
-  
+
           const cardHtml = `
             <div class="col-6 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
               <a href="view.html?characterName=${character.name}">
@@ -112,15 +89,15 @@
               </a>
             </div>
           `;
-  
+
           cardContainer.innerHTML += cardHtml;
-  
+
         } catch (error) {
           console.error('Error fetching character:', error);
         }
       }
     };
-  
+
     loadCharacter();
   </script>
 
