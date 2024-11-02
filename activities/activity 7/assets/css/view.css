@@ -17,30 +17,30 @@ body {
 }
 
 .test img {
-    max-width: 100%; /* Allow the image to use full width of its parent */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
 }
 
 .container-fluid {
-    padding: 15px; /* Add padding to the container for spacing */
+    padding: 15px; 
 }
 
 .row {
-    margin-left: 0; /* Remove left margin from rows */
-    margin-right: 0; /* Remove right margin from rows */
+    margin-left: 0;
+    margin-right: 0; 
 }
 
 @media (max-width: 768px) {
     .header {
-        font-size: 24px; /* Adjust header size for mobile */
+        font-size: 24px; 
     }
 
     h5 {
-        font-size: 16px; /* Adjust font size for readability */
+        font-size: 16px; 
     }
 
     .test img {
-        max-width: 100%; /* Allow full width on small screens */
+        max-width: 100%; 
     }
 }
 
