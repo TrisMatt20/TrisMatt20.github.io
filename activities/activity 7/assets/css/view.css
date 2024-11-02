@@ -1,0 +1,112 @@
+#body {
+    background-color: #262949;
+}
+
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+    overflow-x: hidden; /* Prevent horizontal scrolling globally */
+}
+
+body {
+    margin: 0; /* Remove default body margin */
+}
+
+.header {
+    margin-top: 20px;
+    color: white;
+}
+
+.test img {
+    max-width: 100%; /* Allow the image to use full width of its parent */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container-fluid {
+    padding: 15px; /* Add padding to the container for spacing */
+}
+
+.row {
+    margin-left: 0; /* Remove left margin from rows */
+    margin-right: 0; /* Remove right margin from rows */
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 24px; /* Adjust header size for mobile */
+    }
+
+    h5 {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    .test img {
+        max-width: 100%; /* Allow full width on small screens */
+    }
+}
+
+
+
+
+.custom-navbar {
+    background-color: #323A95 !important;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.header {
+color: white;
+text-align: center;
+margin-top: 10px;
+}
+
+.test img {
+margin-top: 30px;
+}
+
+.hero-name {
+    color: white;
+    margin-top: 30px;
+    font-size: large;
+    text-align: start;
+}
+
+.race, .aliases, .birth, .appearance, .group, .publisher {
+    margin-top: 30px;
+    color: white;
+}
+
+.intelligence, .strength, .speed, .durability, .power, .combat {
+    color: white;
+    margin-top: 20px;
+}
+
+.nav-link {
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+.nav-link::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: red; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: red; 
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); 
+}

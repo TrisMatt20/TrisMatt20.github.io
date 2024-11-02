@@ -85,17 +85,17 @@
           const character = await response.json();
 
           const cardHtml = `
-              <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
-                <a href="view.html?characterName=${character.name}">
-                  <div class="card rounded-5 my-3" style="background-color: #f0f0f0; width: 100%; overflow: hidden;">
-                    <div class="imgcontainer" style="height: 70%; width: 100%; overflow: hidden;">
-                      <img src="${character.image.url}" alt="${character.name}" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="character-name" style="font-size: 1.2em; font-weight: bold; text-align: center; padding-top: 10px;">${character.name}</div>
-                    <div class="character-publisher" style="text-align: center; color: gray;">${character.biography.publisher}</div>
-                  </div>
-                </a>
-              </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 d-flex justify-content-center">
+                    <a href="view.html?characterId=${i}">
+                        <div class="card rounded-5 my-3" style="background-color: #f0f0f0; width: 100%; overflow: hidden;">
+                            <div class="imgcontainer" style="height: 70%; width: 100%; overflow: hidden;">
+                                <img src="${character.image.url}" alt="${character.name}" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="character-name" style="font-size: 1.2em; font-weight: bold; text-align: center; padding-top: 10px;">${character.name}</div>
+                            <div class="character-publisher" style="text-align: center; color: gray;">${character.biography.publisher}</div>
+                        </div>
+                    </a>
+                </div>
             `;
           cardContainer.innerHTML += cardHtml;
         }
@@ -105,6 +105,7 @@
         loader.style.display = 'none';
       }
     };
+
 
     function changePage(direction) {
       currentPage += direction;
