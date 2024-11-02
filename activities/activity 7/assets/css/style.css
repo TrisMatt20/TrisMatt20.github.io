@@ -2,21 +2,6 @@
     background-color: #262949;
 }
 
-@font-face {
-    font-family: 'Marvel2';
-    src: url("assets/fonts/marvel 2.otf") format('truetype');
-}
-
-@font-face {
-    font-family: 'MarvelRegular';
-    src: url("assets/fonts/Marvel-Regular.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: 'TheMightyAvengers';
-    src: url("assets/fonts/TheMightyAvengers.ttf") format('truetype');
-}
-
 .custom-navbar {
     background-color: #323A95 !important;
 }

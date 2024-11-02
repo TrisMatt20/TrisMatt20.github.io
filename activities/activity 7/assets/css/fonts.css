@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Marvel2';
+    src: url("assets/fonts/marvel 2.otf") format('truetype');
+}
+
+@font-face {
+    font-family: 'MarvelRegular';
+    src: url("assets/fonts/Marvel-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'TheMightyAvengers';
+    src: url("assets/fonts/TheMightyAvengers.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'TheMightyAvengers';
+    src: url("assets/fonts/TheMightyAvengers.ttf") format('truetype');
+}
+
+.hero-title {
+    font-family: 'TheMightyAvengers', sans-serif; /* Fallback to sans-serif if the font doesn't load */
+    font-size: 45px;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-family: 'TheMightyAvengers', sans-serif;
+}

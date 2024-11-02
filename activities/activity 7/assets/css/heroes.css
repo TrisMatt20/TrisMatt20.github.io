@@ -44,7 +44,6 @@
     border-radius: 10px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
     .card {
         width: calc(33.33% - 30px); 
@@ -66,5 +65,25 @@
 .badge.active {
     background-color: red; 
     color: white; 
+  }
+  
+  .pagination-button {
+    background-color: #262949;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination-button:disabled {
+    background-color: #444466;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #1f1f33;
   }
   
