@@ -93,6 +93,17 @@ img {
     margin-top: -20px;
 }
 
+@media (max-width: 767px) {
+    .px-3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .px-3 iframe {
+        width: calc(100% - 30px); /* Reduce width for mobile */
+    }
+}
+
 .footer {
     text-align: center;
     
