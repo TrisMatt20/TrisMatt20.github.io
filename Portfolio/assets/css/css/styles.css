@@ -343,6 +343,7 @@ p {
 .navigation .navbar .navbar-nav .nav-item.active a,
 .navigation .navbar .navbar-nav .nav-item:hover a {
     color: #754ef9;
+    font-weight: 700;
 }
 
 .navigation .navbar .navbar-nav .nav-item.active a::before,
