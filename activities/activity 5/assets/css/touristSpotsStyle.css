@@ -1,6 +1,61 @@
+body {
+    overflow-x: hidden; 
+    margin: 0; 
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container-fluid {
     background-color: #4CAF50;
-    padding: 10px;
+}
+
+.container-fluid, .container {
+    max-width: 100%; 
+}
+
+.text-center img {
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+iframe {
+    max-width: 100%; 
+    width: 100%; 
+    height: 600; 
+}
+
+.row, .px-3 {
+    margin: 0; 
+    padding: 0; 
+}
+
+@media (max-width: 767px) {
+    iframe {
+        width: 100%; 
+        height: auto;
+    }
+
+    img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    .px-3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-6 img {
+        max-width: 90%; 
+    }
 }
 
 .nav-link {
@@ -20,6 +75,9 @@
     transition: transform 0.3s ease; 
 }
 
+.navbar {
+    background-color: #4CAF50;
+}
 .nav-link:hover {
     color: yellow; 
 }
@@ -27,12 +85,6 @@
 .nav-link:hover::after {
     transform: scaleX(1); 
 }
-
-img:hover {
-    transform: scale(1.05); 
-    transition: transform 0.3s ease; 
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-} 
 
 .city, .tabName, .titleLingo {
     text-align: center; 
@@ -48,14 +100,6 @@ img:hover {
 
 .burjKhalifa, .dubaiMall {
     font-style: bold;
-}
-
-body {
-    overflow-x: hidden; 
-}
-
-.row {
-    overflow-x: hidden;
 }
 
 .aboutBK {
@@ -85,6 +129,12 @@ img {
     padding-bottom: 0;
 }
 
+img:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease; 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+} 
+
 .row {
     margin-bottom: 0;
 }
@@ -93,18 +143,7 @@ img {
     margin-top: -20px;
 }
 
-@media (max-width: 767px) {
-    .px-3 {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .px-3 iframe {
-        width: calc(100% - 30px); /* Reduce width for mobile */
-    }
-}
-
 .footer {
     text-align: center;
-    
+    font-size: 10px;
 }
