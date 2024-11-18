@@ -1,0 +1,62 @@
+body {
+    background-color: white;
+}
+
+.navbar {
+    background-color: #3bc71fb9 !important;
+}
+
+.navbar-collapse .nav-link,
+.navbar-brand,
+.navbar-collapse .form-control,
+.navbar-collapse .btn {
+    color: white !important;
+}
+
+.navbar-collapse .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-collapse .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-collapse .btn {
+    border-color: white !important;
+}
+
+.welcome-title {
+    font-weight: bold;
+}
+
+.message-title {
+    font-size: 21px;
+}
+
+.intro-title {
+    font-weight: bold;
+}
+
+.mouse,
+.keyboard,
+.headphones,
+.monitor,
+.stand,
+.table,
+.chair,
+.mic,
+.speaker {
+    font-size: 25px;
+}
+
+.mouse-info,
+.keyboard-info,
+.headphones-info,
+.monitor-info,
+.stand-info,
+.table-info,
+.chair-info,
+.mic-info,
+.speaker-info {
+    font-size: 20px;
+}

@@ -58,18 +58,6 @@ body, html {
     font-weight: 400px;
 }
 
-/* .foodInfo1, .foodInfo2, .foodInfo3{
-    color: #000;
-    text-align: justify;
-    font-family: Roboto; 
-    font-size: 1rem; 
-    line-height: 1.5; 
-    padding: 20px 10px; 
-    padding-top: 0;
-    margin: 30px 30px;
-    margin-top: 20px;
-} */
-
 .note {
     font-style: italic;
     margin-top: 20px;
