@@ -90,3 +90,26 @@ html, body {
 .footer {
 	font-family: 'Noto Serif NP Hmong', sans-serif;
 }
+
+/* Animation */
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-up {
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-up.show {
+    animation: slideUp 0.6s ease-out forwards;
+}
