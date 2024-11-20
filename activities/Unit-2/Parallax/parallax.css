@@ -1,0 +1,89 @@
+/* PARALLAX.CSS */
+/*CSS created by Christopher Jay De Claro*/
+/*github.com/cjdeclaro*/
+
+/*Key Art default settings*/
+
+.keyart,
+.keyart_layer {
+	height: 1000px;
+}
+
+.keyart {
+	position: relative;
+	z-index: 10;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+
+.keyart_layer.parallax {
+	position: fixed;
+}
+
+.main-content {
+	width: 100%;
+	position: absolute;
+	z-index: 200;
+}
+
+/*ADD OR REMOVE LAYERS AS NEEDED*/
+
+#keyart-0 {
+	background-image: url(img/tm/parallax0.png);
+	background-size: cover;
+}
+
+#keyart-1 {
+	background-image: url(img/tm/parallax1.png);
+	background-repeat: no-repeat;
+}
+
+#keyart-2 {
+	background-image: url(img/tm/parallax2.png);
+	background-repeat: no-repeat;
+}
+
+#keyart-3 {
+	background-image: url(img/tm/parallax3.png);
+	background-repeat: no-repeat;
+}
+
+#keyart-4 {
+	background-image: url(img/tm/parallax4.png);
+	background-repeat: no-repeat;
+}
+
+#keyart-5 {
+	background-image: url(img/tm/parallax5.png);
+	background-repeat: no-repeat;
+}
+
+#keyart-6 {
+	background-image: url(img/tm/parallax6.png);
+	background-repeat: no-repeat;
+}
+
+#keyart-7 {
+	background-color: transparent;
+	font-family: 'Heroes Assemble', sans-serif;
+	font-size: 170px;
+	color: white;
+	text-align: center;
+	padding-top: 120px;
+	text-shadow: 4px 4px 10px rgba(235, 64, 52, 1);;
+
+}
+
+/* #keyart-8 {
+	background-image: url(img/test/parallax8.png);
+} */
+
+#keyart-scrim {
+	opacity: 0;
+}

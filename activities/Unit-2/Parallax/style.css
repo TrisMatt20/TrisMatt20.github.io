@@ -1,0 +1,92 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+
+@import url('https://fonts.cdnfonts.com/css/noto-serif-np-hmong');
+@import url('https://fonts.cdnfonts.com/css/heroes-assemble');
+
+
+/*!This style is important, do not override!*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	overflow-x: hidden;
+	height: 100%;
+    background-color: white;
+}
+
+.main-content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.title {
+	font-family: 'Heroes Assemble', sans-serif;
+}
+
+.def-1,
+.def-2 {
+	font-family: 'Noto Serif NP Hmong', sans-serif;
+	font-size: 20px;
+}
+
+.powerStone,
+.spaceStone,
+.realityStone,
+.soulStone,
+.timeStone,
+.mindStone, 
+.conclusion{
+	font-family: 'Heroes Assemble', sans-serif;
+
+}
+
+.powerStone {
+	color: #5f4e9b;
+}
+
+.spaceStone {
+	color: #3577aa;
+}
+
+.realityStone {
+	color: #e93348;
+}
+
+.soulStone {
+	color: #b37025;
+}
+
+.timeStone {
+	color: #265E40;
+}
+
+.mindStone {
+	color: #ac934b;
+}
+
+.stoneInfo {
+	font-family: 'Noto Serif NP Hmong', sans-serif;
+	font-size: 20px;
+}
+
+.powerStoneHistory,
+.spaceStoneHistory,
+.realityStoneHistory,
+.soulStoneHistory,
+.timeStoneHistory,
+.mindStoneHistory,
+.conclusionInfo {
+	font-family: 'Noto Serif NP Hmong', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+.footer {
+	font-family: 'Noto Serif NP Hmong', sans-serif;
+}
