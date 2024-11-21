@@ -164,7 +164,7 @@ p {
     -webkit-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
     -moz-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
     box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
-    padding: 30px 0;
+    padding: 20px 0;
     background-color: #fff;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
@@ -612,23 +612,31 @@ p {
 @media (max-width: 768px) {
     .navbar {
         padding: 5px 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .navbar-brand img {
-        max-width: 100px;
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 
     .navbar-nav {
-        background-color: #343a40;
+        background-color: white;
         padding: 10px;
         border-radius: 5px;
-        width: 100%;
+        width: calc(100% - 20px);
+        margin: 0 auto;
         flex-direction: column;
+        box-sizing: border-box;
     }
 
     .navbar-collapse {
         text-align: center;
         padding: 10px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .navbar-nav .nav-item {
@@ -651,12 +659,12 @@ p {
     }
 
     .navbar-toggler-icon {
+        display: inline-block;
         width: 25px;
         height: 2px;
         background-color: #ffffff;
         border-radius: 5px;
         position: relative;
-        display: inline-block;
     }
 
     .navbar-toggler-icon::before,
@@ -678,7 +686,6 @@ p {
         top: 6px;
     }
 }
-
 
 @media (max-width: 768px) {
     .header {
@@ -1021,10 +1028,9 @@ p {
 
 @keyframes slideUp {
     from {
-        transform: translateY(100px);
+        transform: translateY(20px); 
         opacity: 0;
     }
-
     to {
         transform: translateY(0);
         opacity: 1;
@@ -1033,7 +1039,7 @@ p {
 
 .animate-up {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(20px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
@@ -1041,54 +1047,5 @@ p {
     animation: slideUp 0.6s ease-out forwards;
 }
 
-/* Keyframe for sliding in from the left */
-@keyframes slideLeft {
-    from {
-        transform: translateX(-100px);
-        /* Start off to the left */
-        opacity: 0;
-    }
 
-    to {
-        transform: translateX(0);
-        /* End in the original position */
-        opacity: 1;
-    }
-}
 
-/* Keyframe for sliding in from the right */
-@keyframes slideRight {
-    from {
-        transform: translateX(100px);
-        /* Start off to the right */
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        /* End in the original position */
-        opacity: 1;
-    }
-}
-
-/* Class for left animation */
-.animate-left {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.animate-left.show {
-    animation: slideLeft 0.6s ease-out forwards;
-}
-
-/* Class for right animation */
-.animate-right {
-    opacity: 0;
-    transform: translateX(100px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.animate-right.show {
-    animation: slideRight 0.6s ease-out forwards;
-}

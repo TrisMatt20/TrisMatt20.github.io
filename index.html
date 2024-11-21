@@ -19,13 +19,12 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0">
     <header id="home" class="header-area" data-bs-theme="dark">
         <div class="navigation fixed-top bg-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #343a40;">
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
                             <a class="navbar-brand" href="index.html">
-                                <img src="Portfolio/assets/css/img/profile/logo.png" style="width: 200px;"
-                                    alt="TM Lord">
+                                <img src="Portfolio/assets/css/img/profile/logo.png" alt="TM Lord">
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
@@ -50,36 +49,6 @@
         </div>
     </header>
     <header id="home" class="header-area" data-bs-theme="dark">
-        <div class="navigation fixed-top bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg navbar-dark">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="Portfolio/assets/css/img/profile/logo.png" style="width: 200px;"
-                                    alt="TM Lord">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ms-auto">
-                                    <li class="nav-item active"><a class="nav-link page-scroll" href="#home">Home</a>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link page-scroll" href="#about">About</a></li>
-                                    <li class="nav-item"><a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link page-scroll" href="#projects">Projects</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div id="header-content" class="header-content d-flex align-items-center bg-dark text-dark">
             <div class="header-shape shape-one">
                 <img src="Portfolio/assets/css/img/shapes/shape-1.png" alt="Shape" class="img-fluid">
@@ -108,7 +77,7 @@
             <!-- Main Content -->
             <div class="container">
                 <div class="row align-items-center">
-                    <div class=" col-12 col-lg-6 offset-xl-1">
+                    <div class="col-12 col-lg-6 offset-xl-1">
                         <div class="header-image">
                             <img src="Portfolio/assets/css/img/profile/profilePic.png" alt="Picture">
                         </div>
@@ -152,17 +121,17 @@
                 <div class="col-lg-8">
                     <div class="section-title text-center animate-up">
                         <h2 class="title" style="color: #ffffff;">About Me</h2>
-                        <p style="color: #ffffff;">This section displays my basic information.</p>
+                        <p class="px-3" style="color: #ffffff;">This section displays my basic information.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="about-content mt-50 animate-left">
+                    <div class="about-content mt-50 px-3 animate-up">
                         <h5 class="about-title" style="font-weight: bold; color: #ffffff; font-size: 30px;">
-                            Hi There! I'm Tristan Matthew
+                            Hi There! I'm Tristan Matthew Matencio
                         </h5>
-                        <p class="animate-left" style="text-align: justify; color: #ffffff;">
+                        <p style="text-align: justify; color: #ffffff;">
                             A passionate 3rd-year Information Technology student at the Polytechnic University of the
                             Philippines, Sto. Tomas branch. With a focus on web development and database management, I
                             am
@@ -171,7 +140,7 @@
                             robust
                             data handling.
                         </p>
-                        <ul class="clearfix animate-left">
+                        <ul class="clearfix">
                             <li>
                                 <div class="single-info d-flex align-items-center">
                                     <i class="fa-solid fa-cake-candles fa-xl"
@@ -202,7 +171,7 @@
                     </div>
                 </div>
                 <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <div class="about-skills pt-25 animate-right">
+                    <div class="about-skills pt-25 px-3 animate-up">
                         <div class="skill-item mt-25">
                             <h3 class="about-skills" style="font-weight: bold; color: #ffffff; font-size: 30px;">
                                 Skills
@@ -220,21 +189,24 @@
                                 <i class="fa-brands fa-php fa-2xl" style="color: #b197fc; margin-right: 10px;"></i>
                                 <h4 style="color: #ffffff; margin: 0;">PHP</h4>
                             </div>
-                            <div class="skill-item mt-25">
-                                <div class="single-info d-flex align-items-center">
-                                    <i class="fa-brands fa-js fa-lg" style="color: #FFD43B; margin-right: 10px;"></i>
-                                    <h4 style="color: #ffffff; margin: 0;">JavaScript</h4>
-                                </div>
-                            </div>
-                            <div class="skill-item mt-25">
-                                <div class="single-info d-flex align-items-center">
-                                    <i class="fa-brands fa-java fa-lg" style="color: #eb0000; margin-right: 10px;"></i>
-                                    <h4 style="color: #ffffff; margin: 0;">Java</h4>
-                                </div>
+                        </div> 
+                        <div class="skill-item mt-25">
+                            <div class="single-info d-flex align-items-center">
+                                <i class="fa-brands fa-js fa-lg" style="color: #FFD43B; margin-right: 10px;"></i>
+                                <h4 style="color: #ffffff; margin: 0;">JavaScript</h4>
                             </div>
                         </div>
+                        <div class="skill-item mt-25">
+                            <div class="single-info d-flex align-items-center">
+                                <i class="fa-brands fa-java fa-lg" style="color: #eb0000; margin-right: 10px;"></i>
+                                <h4 style="color: #ffffff; margin: 0;">Java</h4>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <!-- Fields of Services -->
@@ -244,11 +216,11 @@
                 <div class="col-lg-8">
                     <div class="section-title text-center pb-30 animate-up">
                         <h2 class="title" style="color: #ffffff;">Fields of Services</h2>
-                        <p style="color: #ffffff;">This section highlights my field of services I can provide in the
+                        <p class="px-3"style="color: #ffffff;">This section highlights my field of services I can provide in the
                             industry.</p>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center px-3">
                     <!-- Web Designing Skill -->
                     <div class="col-lg-4 col-md-6 col-sm-8 animate-up">
                         <div class="single-service text-center mt-30">
@@ -257,33 +229,33 @@
                             </div>
                             <div class="service-content">
                                 <h4 style="color: #ffffff;">Web Designing</h4>
-                                <p style="color: #ffffff; margin-top: 10px;">I am capable of designing and developing
+                                <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am capable of designing and developing
                                     webpages tailored to meet specific criteria and requirements.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Object-Oriented Programming -->
-                    <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="col-lg-4 col-md-6 col-sm-8 px-3">
                         <div class="single-service text-center mt-30 animate-up">
                             <div class="service-icon mb-3">
                                 <i class="fa-solid fa-terminal" style="color: #cf5a0c; font-size: 2em;"></i>
                             </div>
                             <div class="service-content">
                                 <h4 style="color: #ffffff;">Object-Oriented Programming</h4>
-                                <p style="color: #ffffff; margin-top: 10px;">I am proficient in developing programs and
+                                <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am proficient in developing programs and
                                     systems that utilize Object-Oriented Programming (OOP) principles.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Back-End Development -->
-                    <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="col-lg-4 col-md-6 col-sm-8 px-3">
                         <div class="single-service text-center mt-30 animate-up">
                             <div class="service-icon mb-3">
                                 <i class="fa-solid fa-database fa-2xl" style="color: #B197FC; font-size: 2em;"></i>
                             </div>
                             <div class="service-content">
                                 <h4 style="color: #ffffff; padding-top: 10px;">Back-End Development</h4>
-                                <p style="color: #ffffff; margin-top: 10px;">I am proficient in managing the back-end of
+                                <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am proficient in managing the back-end of
                                     systems, ensuring the proper implementation of best practices and security measures.
                                 </p>
                             </div>
@@ -291,7 +263,7 @@
                     </div>
                 </div>
                 <!-- Quality Assurance -->
-                <div class=" col-lg-4 col-md-6 col-sm-8">
+                <div class=" col-lg-4 col-md-6 col-sm-8 px-3">
                     <div class="single-service text-center mt-30 animate-up">
                         <div class="service-icon">
                             <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B; font-size: 2em;"></i>
@@ -300,7 +272,7 @@
                             <h4 style="color: #ffffff; color: #ffffff; margin-top: 10px;">Quality
                                 Assurance
                             </h4>
-                            <p style="color: #ffffff; margin-top: 10px;">I am capable of ensuring that my projects
+                            <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am capable of ensuring that my projects
                                 function effectively by
                                 identifying, reducing, and eliminating errors and bugs throughout the development
                                 process.</p>
@@ -308,21 +280,21 @@
                     </div>
                 </div>
                 <!-- Communication -->
-                <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="col-lg-4 col-md-6 col-sm-8 px-3">
                     <div class="single-service text-center mt-30 animate-up">
                         <div class="service-icon">
                             <i class="fa-solid fa-comment fa-2xl" style="color: #74C0FC; font-size: 2em;"></i>
                         </div>
                         <div class="service-content">
                             <h4 style="color: #ffffff; margin-top: 10px;">Communication</h4>
-                            <p style="color: #ffffff; margin-top: 10px;">I am able to clearly articulate my thoughts and
+                            <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am able to clearly articulate my thoughts and
                                 effectively
                                 manage interpersonal communication.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Consultancy and Support Skill -->
-                <div class="col-lg-4 col-md-6 col-sm-8">
+                <div class="col-lg-4 col-md-6 col-sm-8 px-3">
                     <div class="single-service text-center mt-30 animate-up">
                         <div class="service-icon">
                             <i class="fa-solid fa-headset fa-2xl" style="color: #2cbe19; font-size: 2em;"></i>
@@ -330,7 +302,7 @@
                         <div class="service-content">
                             <h4 style="color: #ffffff; margin-top: 10px;">
                                 Consultancy and Support</h4>
-                            <p style="color: #ffffff; margin-top: 10px;">I am capable of offering assistance, sharing
+                            <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am capable of offering assistance, sharing
                                 knowledge, and
                                 providing support to others in the development process.</p>
                         </div>
@@ -343,9 +315,9 @@
     <section id="projects" class="project-area pt-125 pb-130">
         <div class="container">
             <div class="row">
-                <div class="section-title pb-25 animate-up">
+                <div class="section-title pb-25 animate-up px-3">
                     <h2 class="title" style="color: white; text-align: center;">My Projects</h2>
-                    <p style="color:white; text-align: center; font-size: larger;">This section displays all the
+                    <p class= "px-3"style="color:white; text-align: center;">This section displays all the
                         compilation of my activites in my Web Development Course</p>
                     <div class="col-lg-8">
 
@@ -481,7 +453,8 @@
                                 <div class="project-overlay">
                                     <div class="project-content text-center">
                                         <h3 class="project-title"
-                                            style="margin-top: 10px; color: black; font-weight: bold;">Infinity Stones</h3>
+                                            style="margin-top: 10px; color: black; font-weight: bold;">Infinity Stones
+                                        </h3>
                                         <div class="project-more">
                                             <a class="main-btn" href="activities/Unit-2/Parallax/banner.html">
                                                 <i class="fa-solid fa-eye fa-2xl" style="color: #ffffff;"></i> View

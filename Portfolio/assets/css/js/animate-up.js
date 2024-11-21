@@ -14,10 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     targets.forEach(target => observer.observe(target));
 });
 
-// Select all animated elements
+
 const animatedElements = document.querySelectorAll('.animate-left, .animate-right, .animate-up');
 
-// Function to add the 'show' class when element enters the viewport
 const handleScroll = () => {
     animatedElements.forEach((element) => {
         const rect = element.getBoundingClientRect();
@@ -27,8 +26,3 @@ const handleScroll = () => {
     });
 };
 
-// Trigger on scroll
-window.addEventListener('scroll', handleScroll);
-
-// Trigger on page load
-handleScroll();
