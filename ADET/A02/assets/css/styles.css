@@ -3,13 +3,27 @@
     --font-size: 20px;
 }
 
+body{
+    overflow: hidden;
+}
+
+.row {
+    height: 100vh;
+}
+.sidebar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 .sidebarCard {
     background-color: #7ACAD2;
+    display: flex;
+    flex-direction: column;
 }
 
 
-.home, .members, .discography, .gallery, .video {
+.home, .members, .discography, .gallery, .video, .about {
     font-family: var(--font);
     font-size: var(--font-size);
     margin-top: 5px;
@@ -22,5 +36,57 @@
 
 .themeMode.clicked img {
     animation: rotateClick 0.4s ease;
+}
+
+.navbar {
+    background-color: #7ACAD2;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px; 
+    }
+
+    .mainContainer {
+        overflow-y:auto;
+        height: 100vh;
+    }
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.flower-img.rotate {
+    animation: rotate360 0.5s ease;
+}
+
+.name {
+  font-family: var(--font);
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.disclaimer {
+    font-family: var(--font);
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.footer {
+    background-color: none;
+    border-radius: 0%;
+}
+
+.mainContainer {
+    overflow-y:auto;
+    height: 100vh;
 }
 
