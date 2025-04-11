@@ -156,7 +156,7 @@ if (isset($_GET['page'])) {
             </div>
 
             <div class="sidebar col-2 d-none d-md-block" id="desktopSidebar">
-                <div class="sidebarCard card shadow rounded-3 mt-2">
+                <div class="sidebarCard card shadow rounded-3 mt-3">
                     <div class="flex-shrink-0 p-3">
                         <div class="header d-flex justify-content-between align-items-center">
                             <a href="?page=home">
@@ -228,14 +228,14 @@ if (isset($_GET['page'])) {
 
             <!-- MAIN CONTENT -->
             <div class="col-md-10">
-                <div class="mainContainer card mt-2">
+                <div class="mainContainer card mt-3">
                   <?php include("assets/shared/". $page . ".php"); ?>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <script src="assets/js/animate-up.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/icon.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
