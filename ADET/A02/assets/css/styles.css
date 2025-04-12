@@ -3,9 +3,10 @@
     --font-size: 20px;
 }
 
-body{
-    overflow-x: hidden;
-    overflow-y: auto;
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent body scroll */
 }
 
 .row {
@@ -89,8 +90,15 @@ body{
 }
 
 .mainContainer {
-    min-height: 100vh; 
-    padding-bottom: 20px; 
+    height: calc(100vh - 80px); 
+    overflow-y: auto;
+    margin-bottom: 20px; 
+}
+
+.album {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
 }
 
 .animate-up {
@@ -152,4 +160,26 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+
+.animate-up-asynch {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-up-asynch.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.albumTitle {
+    font-family: var(--font);
+    font-size: 16px;
+}
+
+.stream {
+    font-size: 14px;
+    font-family: var(--font);
 }

@@ -1,6 +1,7 @@
+git
 <div class="container">
     <div class="row mt-3 pt-3 justify-content-center">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+        <div class="profile col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center animate-up-asynch">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -13,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center animate-up-asynch">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -26,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center animate-up-asynch">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -39,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center animate-up-asynch">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -52,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center animate-up-asynch">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -65,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center animate-up-asynch">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -78,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center animate-up-asynch">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -91,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center animate-up-asynch">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -106,3 +107,5 @@
         </div>
     </div>
 </div>
+
+<script src="assets/js/animate-up-asynch.js"></script>
