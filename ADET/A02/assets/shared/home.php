@@ -1,8 +1,8 @@
 
-<img src="assets/img/banner/banner.png" alt="banner">
+<img src="assets/img/banner/banner.png" alt="banner" class="animate-up-asynch">
 <div class="background">
-    <h2 class="info text-center mt-5 animate-up" style="font-family: Poppins, sans-serif;">What is BINI?</h2>
-    <p class="about px-4 mt-4 animate-up" style="font-family: Roboto; font-size: 16px;">BINI, the sensational Filipino pop
+    <h2 class="info text-center mt-5 animate-up-asynch" style="font-family: Poppins, sans-serif;">What is BINI?</h2>
+    <p class="about px-4 mt-4 animate-up-asynch" style="font-family: Roboto; font-size: 16px;">BINI, the sensational Filipino pop
         group, is made up
         of eight incredibly talented members: Aiah, Colet, Maloi, Gwen,
         Stacey, Mikha, Jhoanna, and Sheena. They have quickly risen to fame, becoming the most successful female
@@ -18,3 +18,5 @@
         record time.
         Their impact has not gone unnoticed — Teen Vogue named them one of 2024's girl groups to watch!</p>
 </div>
+
+<script src="assets/js/animate-up-asynch.js"></script>

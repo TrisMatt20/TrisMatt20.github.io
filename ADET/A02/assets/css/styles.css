@@ -54,7 +54,10 @@ html, body {
         height: calc(120vh - 80px); 
         padding-top: 20px; 
     }
-    
+    .mensahe {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 @keyframes rotate360 {
@@ -193,4 +196,16 @@ html, body {
     font-family: var(--font);
     font-weight: bold;
     font-size: 18px;
+}
+
+.head {
+    font-family: var(--font);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.mensahe {
+    font-family: var(--font);
+    font-size: 18px;
+    margin-top: 20px;
 }
