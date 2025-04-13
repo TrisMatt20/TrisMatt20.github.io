@@ -13,12 +13,6 @@ if (isset($_GET['page'])) {
         case "discography":
             $page = "discography";
             break;
-        case "gallery":
-            $page = "gallery";
-            break;
-        case "videos":
-            $page = "videos";
-            break;
         case "about":
             $page = "about";
             break;
@@ -119,23 +113,6 @@ if (isset($_GET['page'])) {
                             </a>
                         </li>
                         <li class="mb-1">
-                            <a href="?page=gallery">
-                                <button
-                                    class="gallery btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">
-                                    Gallery
-                                </button>
-                            </a>
-                        </li>
-                        <li class="mb-1">
-                            <a href="?page=videos">
-                                <button
-                                    class="video btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">
-                                    Videos
-                                </button>
-                            </a>
-                        </li>
-                        <hr class="line shadow">
-                        <li class="mb-1">
                             <a href="?page=about">
                                 <button
                                     class="about btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">
@@ -143,6 +120,7 @@ if (isset($_GET['page'])) {
                                 </button>
                             </a>
                         </li>
+                        <hr class="line shadow">
                         <li class="mb-1">
                                 <footer class="footer text-start py-4 mt-auto">
                                     <p class="name mb-1">© 2025 Tristan Matthew Matencio <br> All rights reserved.</p>
@@ -194,24 +172,12 @@ if (isset($_GET['page'])) {
                                 </a>
                             </li>
                             <li class="mb-1">
-                                <a href="?page=gallery">
-                                    <button
-                                        class="gallery btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">Gallery</button>
-                                </a>
-                            </li>
-                            <li class="mb-1">
-                                <a href="?page=videos">
-                                    <button
-                                        class="video btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">Videos</button>
-                                </a>
-                            </li>
-                            <hr class="line shadow">
-                            <li class="mb-1">
                                 <a href="?page=about">
                                     <button
                                         class="about btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">About</button>
                                 </a>
                             </li>
+                            <hr class="line shadow">
                             <li class="mb-1">
                                 <footer class="footer text-start mt-auto ">
                                     <p class="name mb-1">© 2025 Tristan Matthew Matencio <br> All rights reserved.</p>

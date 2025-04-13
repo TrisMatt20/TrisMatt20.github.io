@@ -41,6 +41,7 @@ function populateAlbumDetails() {
                 <img src="${albumCover[i]}" alt="${albumName[i]}" class="img-fluid rounded-top-4 p-3" style="height: 250px; object-fit: cover;">
                 <div class="body p-2">
                     <h6 class="albumTitle card-title mb-3">${albumName[i]}</h6>
+                    <div class="album-details mb-3" style="font-family: Poppins, sans-serif; font-size: 14px;">${albumType[i]} • ${yearReleased[i]} • ${albumContent[i]}</div>
                     <a href="${albumLinks[i]}" target="_blank">
                         <button type="button" class="stream btn btn-primary rounded-pill w-50 mb-3">Stream Now</button>
                     </a>

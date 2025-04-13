@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row mt-3 pt-3 justify-content-center" id="albums-row">
-        <!-- JavaScript loop will insert here dynamically -->
+        <!-- JavaScript album loop will insert here dynamically -->
     </div>
 </div>
 
