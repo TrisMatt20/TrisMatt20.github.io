@@ -108,7 +108,7 @@ if (isset($_GET['page'])) {
                             <a href="?page=discography">
                                 <button
                                     class="discography btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">
-                                    Discogprahy
+                                    Discography
                                 </button>
                             </a>
                         </li>
@@ -168,7 +168,7 @@ if (isset($_GET['page'])) {
                             <li class="mb-1">
                                 <a href="?page=discography">
                                     <button
-                                        class="discography btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">Discogprahy</button>
+                                        class="discography btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed">Discography</button>
                                 </a>
                             </li>
                             <li class="mb-1">
