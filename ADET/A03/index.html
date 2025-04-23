@@ -2,43 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="logo navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="home nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="personal nav-item">
+            <a class="nav-link" href="#">TBD</a>
+          </li>
+          <li class="about nav-item">
+            <a class="nav-link" href="#">TBD</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bento Layout -->
+  <div class="container p-3">
+    <!-- Top Section -->
+    <div class="row">
+      <!-- Large Left Card -->
+      <div class="col-md-7">
+        <div class="card rounded-5 shadow p-3 box-lg"></div>
+      </div>
+
+      <!-- Right Stack -->
+      <div class="col-md-5">
+        <!-- Top Card -->
+        <div class="card rounded-5 shadow p-3 box-md"></div>
+
+        <!-- Two Small Cards Side by Side -->
+        <div class="row">
+          <div class="col-6">
+            <div class="card rounded-5 shadow p-3 box-sm"></div>
+          </div>
+          <div class="col-6">
+            <div class="card rounded-5 shadow p-3 box-sm"></div>
           </div>
         </div>
-      </nav>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Left column (6 columns wide) -->
+      <div class="col-md-6">
+        <!-- Full width cards within left column -->
+        <div class="card rounded-5 shadow p-3 box-sm mb-3"></div>
+        <div class="card rounded-5 shadow p-3 box-sm mb-3"></div>
+        
+
+        <!-- Two half-width cards in a row -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card rounded-5 shadow p-3 box-sm mb-3"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="card rounded-5 shadow p-3 box-sm mb-3"></div>
+          </div>
+          <div class="card rounded-5 shadow p-3 box-sm mb-3"></div>
+        </div>
+      </div>
+
+      <!-- Right column (6 columns wide) -->
+      <div class="col-md-6">
+        <div class="card rounded-5 shadow p-3 box-lg mb-3"></div>
+
+        <!-- Bottom card-->
+        <div class="card rounded-5 shadow p-3 box-md"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
