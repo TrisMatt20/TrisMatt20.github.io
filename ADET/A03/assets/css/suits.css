@@ -1,0 +1,12 @@
+@import url('https://fonts.cdnfonts.com/css/flash-rogers');
+
+:root {
+  --font-family: 'Flash Rogers', sans-serif;
+  --font-family-lead: 'Roboto', sans-serif;
+  --color: white;
+  --font-title-size: 50px;
+}
+
+.test {
+    font-family: var(--font-family);
+}
