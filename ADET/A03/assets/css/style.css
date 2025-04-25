@@ -5,6 +5,8 @@
   --font-family-lead: 'Roboto', sans-serif;
   --color: white;
   --font-title-size: 50px;
+  --font-footer-size: 10px;
+  --font-body-size: 18px;
 }
 
 body {
@@ -47,10 +49,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-left: 20px;
-  margin-right: 20px;
-  
+  margin-right: 20px; 
   font-size: 30px;
-  font-weight: bold;
 }
 
 
@@ -71,7 +71,8 @@ body {
 }
 
 .lead {
-  font-family: var(--font-family-lead); 
+  font-family: var(--font-family-lead);
+   font-size: var(--font-body-size);
 }
 
 .discover {
@@ -98,4 +99,12 @@ body {
 .disclaimer {
   font-family: var(--font-family-lead);
   font-size: 16px;
+}
+
+.owner {
+  font-size: var(--font-footer-size) !important;
+}
+
+.disclaimer {
+  font-size: var(--font-footer-size) !important;
 }
