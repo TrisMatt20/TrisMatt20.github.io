@@ -108,3 +108,16 @@ body {
 .disclaimer {
   font-size: var(--font-footer-size) !important;
 }
+
+.hover-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .hover-img {
+    max-height: 500px;
+  }
+}
