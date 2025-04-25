@@ -121,3 +121,14 @@ body {
     max-height: 500px;
   }
 }
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.animate-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}

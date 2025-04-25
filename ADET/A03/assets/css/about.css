@@ -7,7 +7,46 @@
   --font-title-size: 40px;
   --font-heading-size: 33px;
   --font-heading-sm-size: 25px;
-  --font-body-size: 18px;
+  --font-body-size: 15px;
   --font-body-sm-size: 14px;
   --font-footer-size: 10px;
+}
+
+.quote {
+  font-family: var(--font-family);
+  font-size: var(--font-heading-size);
+}
+
+.author {
+  font-family: var(--font-family-lead);
+  font-size: var(--font-body-size);
+  margin-top: 10px;
+}
+
+.desc {
+  font-family: var(--font-family-lead);
+  font-size: var(--font-body-size);
+}
+
+.message {
+  font-family: var(--font-family-lead);
+  font-size: var(--font-body-size);
+  margin-top: 10px;
+}
+
+.abt {
+  font-family: var(--font-family);
+  font-size: var(--font-heading-size);
+  margin-top: 10px;
+}
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.animate-up.show {
+  opacity: 1;
+  transform: translateY(0);
 }

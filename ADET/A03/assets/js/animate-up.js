@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("Animate-up.js is loaded! ✅");
     const targets = document.querySelectorAll('.animate-up');
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
