@@ -22,6 +22,13 @@
     font-size: var(--font-heading-size);
 }
 
+.carousel-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 300px; /* Ideal height for mobile */
+}
+
 @media (max-width: 768px) {
     .titulo {
         font-size: var(--font-heading-sm-size);
@@ -31,6 +38,9 @@
     }
     .suit-description {
         font-size: var(--font-body-sm-size) !important;
+    }
+    .carousel-img {
+      max-height: 500px; /* Larger screens can show taller images */
     }
 }
 
