@@ -1,0 +1,201 @@
+:root {
+    --largeFont: "Geist", sans-serif;
+    --body: "Geist Mono", monospace;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: var(--body);
+}
+
+.base {
+    height: 100vh;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+.left-top {
+    flex: 9;
+}
+
+.left-bottom {
+    flex: 0;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart{
+    overflow: auto;
+}
+
+.cart .wrapper {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 100%;
+}
+
+.total {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    width: 100%;
+    border-top: 1px solid #D9D9D9;
+}
+
+.total-label {
+    font-weight: 600;
+}
+
+.item {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    width: 100%;
+}
+
+.btn-pay,
+.remove,
+.clear-all {
+    width: 100%;
+}
+
+.top-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.mid-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.categories {
+    overflow-y: hidden;
+}
+
+.categories .wrapper {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.categories .card {
+    height: 10vh;
+}
+
+.categories img {
+    height: 100%;
+    width: auto;
+}
+
+.sizes {
+    height: 14%;
+    overflow-y: hidden;
+}
+
+.sizes .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 80px;
+    height: 100%;
+}
+
+.wrapper .size:hover {
+    cursor: pointer;
+    border: 1px solid green;
+}
+
+.product-type {
+    width: fit-content;
+    height: 80px;
+}
+
+.product-type:hover {
+    cursor: pointer;
+    border: 1px solid green;
+}
+
+.product-type img {
+    height: 100%;
+}
+
+.products {
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.products .wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.products .item {
+    width: 100%;
+    max-width: 150px;
+    height: 250px;
+    display: flex;
+    flex-grow: 4;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.products .item:hover {
+    cursor: pointer;
+    border: 1px solid green;
+}
+
+.products .icon {
+    height: 150px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.icon img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-name{
+    white-space: nowrap;
+}
+
+.total-label,
+.clear-all,
+.remove,
+.qty-label {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
