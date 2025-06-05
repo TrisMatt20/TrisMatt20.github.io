@@ -1,0 +1,264 @@
+.BINI-logo img {
+    max-width: 75px;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: relative; /* Make navbar fixed */
+    top: 0; /* Stick it to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: #605ded; /* Set the desired background color */
+    backdrop-filter: blur(10px); /* Optional: Blur effect for glassmorphism */
+    border: none; /* Remove any border */
+    padding: 10px 20px; /* Padding for the navbar items */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+
+body {
+    scroll-behavior: smooth; /* Smooth scroll behavior */
+}
+
+.section {
+    height: 100vh; /* Full height sections */
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #dee2e6; /* Border for visual separation */
+}
+.nav-item {
+    font-family: Roboto;
+    font-style: bold;
+    font-size: 20px;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    margin-top: 0;
+    z-index: -1;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .BINI {
+        text-align: center;
+    }
+
+    .name,
+    .birthday {
+        text-align: center;
+    }
+}
+
+.pics img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #dd228c;
+}
+
+.image-container {
+    position: relative;
+    width: auto; 
+    height: auto; 
+    overflow: hidden; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(246, 112, 116, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease-in-out; 
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.image-container:hover .overlay {
+    top: 0; 
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.overlay h5 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.overlay button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.overlay a {
+    color: white;
+    text-decoration: none;
+}
+
+.overlay a:hover {
+    text-decoration: underline; 
+}
+
+
+.albums-container {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    padding: 10px;
+    scrollbar-width: thin; 
+    scrollbar-color: #c5c5c5 transparent; 
+}
+
+/* For WebKit browsers like Chrome, Safari, and Edge */
+.albums-container::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.albums-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.albums-container::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 10px; 
+    border: 2px solid transparent; 
+}
+
+.albums-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+.album-card {
+    position: relative;
+    flex: 0 0 auto; 
+    margin-right: 15px; 
+    text-align: center;
+    width: 200px;
+}
+
+.album-card img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+.album-title {
+    font-weight: bold;
+}
+
+.album-details {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.video-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; 
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.img-thumbnail {
+    width: 100%; 
+    height: auto; 
+}
+
+.collapse {
+    transition: max-height 0.5s ease; 
+    overflow: hidden; 
+}
+.hover {
+    filter: brightness(0.8); 
+    transition: filter 0.3s ease; 
+}
+
+#themeLink {
+    cursor: pointer;
+}
+
+.nav-item-custom {
+    margin-right: 15px; 
+}
+
+.nav-link {
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+.nav-link::after {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: lightblue; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: skyblue; 
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1); 
+}
