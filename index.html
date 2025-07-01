@@ -17,6 +17,23 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0">
+    <!-- loader -->
+    <div class="preloader">
+        <div class="load">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header id="home" class="header-area" data-bs-theme="dark">
         <div class="navigation fixed-top bg-dark">
             <div class="container-fluid">
@@ -85,9 +102,12 @@
                     <div class="col-xl-5 col-lg-6">
                         <div class="header-content-right animate-up">
                             <h4 class="sub-title">Hello, I'm</h4>
-                            <h1 class="title" style="color: white;">Tristan Matthew</h1>
-                            <p style="color: white;">Aspiring Web Developer and Database Administrator.</p>
-                            <a class="main-btn" href="#projects">View my Projects</a>
+                            <h1 class="roles" style="color: white;">
+                                <span id="typing-wrapper">
+                                    <span id="typing-text"></span><span id="cursor">|</span>
+                                </span>
+                            </h1>
+                            <a class="main-btn" style="text-decoration: none; margin-top: 30px;" href="#projects">View my Projects</a>
                         </div>
                     </div>
                 </div>
@@ -102,8 +122,7 @@
                                     <li><a href="https://www.facebook.com/trismatt20?mibextid=LQQJ4d"><i
                                                 class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></a></i>
                                     </li>
-                                    <li><a href="https://www.instagram.com/_bemore35"><i
-                                                class="fa-brands fa-square-instagram fa-2xl"
+                                    <li><a href="mailto:tmtmatencio@gmail.com"><i class="fa-brands fa-google fa-2xl"
                                                 style="color: #ffffff;"></i></a></li>
                                     <li><a href="https://github.com/TrisMatt20/TrisMatt20.github.io"><i
                                                 class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i></a></li>
@@ -115,10 +134,11 @@
             </div>
         </div>
     </header>
-    <section id="about" class="about-area pt-125 pb-130">
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-area pt-125 pb-130" style="background-color: #262949;">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-6">
                     <div class="section-title text-center animate-up">
                         <h2 class="title" style="color: #ffffff;">About Me</h2>
                         <p class="px-3" style="color: #ffffff;">This section displays my basic information.</p>
@@ -126,198 +146,27 @@
                 </div>
             </div>
             <div class="row">
+                <!-- LEFT COLUMN: INFO -->
                 <div class="col-lg-6">
-                    <div class="about-content mt-50 px-3 animate-up">
-                        <h5 class="about-title" style="font-weight: bold; color: #ffffff; font-size: 30px;">
-                            Hi There! I'm Tristan Matthew Matencio
-                        </h5>
-                        <p style="text-align: justify; color: #ffffff;">
-                            A passionate 3rd-year Information Technology student at the Polytechnic University of the
-                            Philippines, Sto. Tomas branch. With a focus on web development and database management, I
-                            am
-                            dedicated to building efficient, user-centered digital solutions. Driven by a commitment to
-                            continuous learning, I aim to create seamless, responsive web experiences while ensuring
-                            robust
-                            data handling.
-                        </p>
-                        <ul class="clearfix">
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <i class="fa-solid fa-cake-candles fa-xl"
-                                        style="color: #ffffff; margin-right: 10px;"></i>
-                                    <p style="color: #ffffff;">April 20, 2004</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <i class="fa-solid fa-phone fa-lg" style="color: #ededed; margin-right: 10px;"></i>
-                                    <p style="color: #ffffff;">+63 915 228 4543</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <i class="fa-solid fa-envelope fa-lg"
-                                        style="color: #ffffff; margin-right: 10px;"></i>
-                                    <p style="color: #ffffff;">tmtmatencio@gmail.com</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="single-info d-flex align-items-center">
-                                    <i class="fa-solid fa-location-dot" style="color: #f7f7f7; margin-right: 10px;"></i>
-                                    <p style="color: #ffffff;">Trapiche, Tanauan City, Batangas</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="about-content mt-50 px-3 animate-up" id="about-content"></div>
                 </div>
+                <!-- RIGHT COLUMN: SKILLS -->
                 <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <div class="about-skills pt-25 px-3 animate-up">
-                        <div class="skill-item mt-25">
-                            <h3 class="about-skills" style="font-weight: bold; color: #ffffff; font-size: 30px;">
-                                Skills
-                            </h3>
-                        </div>
-                        <div class="skill-item mt-25">
-                            <div class="single-info d-flex align-items-center">
-                                <i class="fa-brands fa-html5 fa-2xl" style="color: #3c00f0; margin-right: 10px;"></i>
-                                <h4 style="color: #ffffff; margin: 0;">HTML</h4>
-                            </div>
-                        </div>
-
-                        <div class="skill-item mt-25">
-                            <div class="single-info d-flex align-items-center">
-                                <i class="fa-brands fa-php fa-2xl" style="color: #b197fc; margin-right: 10px;"></i>
-                                <h4 style="color: #ffffff; margin: 0;">PHP</h4>
-                            </div>
-                        </div>
-                        <div class="skill-item mt-25">
-                            <div class="single-info d-flex align-items-center">
-                                <i class="fa-brands fa-js fa-lg" style="color: #FFD43B; margin-right: 10px;"></i>
-                                <h4 style="color: #ffffff; margin: 0;">JavaScript</h4>
-                            </div>
-                        </div>
-                        <div class="skill-item mt-25">
-                            <div class="single-info d-flex align-items-center">
-                                <i class="fa-brands fa-java fa-lg" style="color: #eb0000; margin-right: 10px;"></i>
-                                <h4 style="color: #ffffff; margin: 0;">Java</h4>
-                            </div>
-                        </div>
-
-                    </div>
+                    <div class="about-skills pt-25 px-3 animate-up" id="skills-content"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Fields of Services -->
-    <section id="portfolio" class="services-area gray-bg pt-125 pb-130" style="background-color: #262949;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center pb-30 animate-up">
-                        <h2 class="title" style="color: #ffffff;">Fields of Services</h2>
-                        <p class="px-3" style="color: #ffffff;">This section highlights my field of services I can
-                            provide in the
-                            industry.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center px-3">
-                    <!-- Web Designing Skill -->
-                    <div class="col-lg-4 col-md-6 col-sm-8 animate-up">
-                        <div class="single-service text-center mt-30">
-                            <div class="service-icon mb-3">
-                                <i class="fa-brands fa-sketch" style="color: #74C0FC; font-size: 2em;"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4 style="color: #ffffff;">Web Designing</h4>
-                                <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am capable of designing and
-                                    developing
-                                    webpages tailored to meet specific criteria and requirements.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Object-Oriented Programming -->
-                    <div class="col-lg-4 col-md-6 col-sm-8 px-3">
-                        <div class="single-service text-center mt-30 animate-up">
-                            <div class="service-icon mb-3">
-                                <i class="fa-solid fa-terminal" style="color: #cf5a0c; font-size: 2em;"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4 style="color: #ffffff;">Object-Oriented Programming</h4>
-                                <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am proficient in developing
-                                    programs and
-                                    systems that utilize Object-Oriented Programming (OOP) principles.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Back-End Development -->
-                    <div class="col-lg-4 col-md-6 col-sm-8 px-3">
-                        <div class="single-service text-center mt-30 animate-up">
-                            <div class="service-icon mb-3">
-                                <i class="fa-solid fa-database fa-2xl" style="color: #B197FC; font-size: 2em;"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4 style="color: #ffffff; padding-top: 10px;">Back-End Development</h4>
-                                <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am proficient in managing
-                                    the back-end of
-                                    systems, ensuring the proper implementation of best practices and security measures.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Quality Assurance -->
-                <div class=" col-lg-4 col-md-6 col-sm-8 px-3">
-                    <div class="single-service text-center mt-30 animate-up">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-star fa-2xl" style="color: #FFD43B; font-size: 2em;"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4 style="color: #ffffff; color: #ffffff; margin-top: 10px;">Quality
-                                Assurance
-                            </h4>
-                            <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am capable of ensuring that my
-                                projects
-                                function effectively by
-                                identifying, reducing, and eliminating errors and bugs throughout the development
-                                process.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Communication -->
-                <div class="col-lg-4 col-md-6 col-sm-8 px-3">
-                    <div class="single-service text-center mt-30 animate-up">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-comment fa-2xl" style="color: #74C0FC; font-size: 2em;"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4 style="color: #ffffff; margin-top: 10px;">Communication</h4>
-                            <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am able to clearly articulate my
-                                thoughts and
-                                effectively
-                                manage interpersonal communication.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Consultancy and Support Skill -->
-                <div class="col-lg-4 col-md-6 col-sm-8 px-3">
-                    <div class="single-service text-center mt-30 animate-up">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-headset fa-2xl" style="color: #2cbe19; font-size: 2em;"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4 style="color: #ffffff; margin-top: 10px;">
-                                Consultancy and Support</h4>
-                            <p class="px-3" style="color: #ffffff; margin-top: 10px;">I am capable of offering
-                                assistance, sharing
-                                knowledge, and
-                                providing support to others in the development process.</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row justify-content-center px-3" id="services-container"></div>
             </div>
         </div>
-    </section>
+    </div>
+
     <!-- projects -->
     <section id="projects" class="project-area pt-125 pb-130">
         <div class="container">
@@ -336,8 +185,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-6 animate-up">
                             <div class="single-project text-center mt-30">
                                 <div class="project">
-                                    <a href="WD/index.html"
-                                        style="display: inline-block; position: relative;">
+                                    <a href="WD/index.html" style="display: inline-block; position: relative;">
                                         <img src="Portfolio/assets/css/img/projects/webdev.png" alt="course1">
                                     </a>
                                 </div>
@@ -359,16 +207,15 @@
                         <div class="col-lg-6 col-md-6 col-sm-6 animate-up">
                             <div class="single-project text-center mt-30">
                                 <div class="project">
-                                    <a href="ADET/index.html"
-                                        style="display: inline-block; position: relative;">
-                                        <img src="Portfolio/assets/css/img/projects/appdev.png"
-                                            alt="course2">
+                                    <a href="ADET/index.html" style="display: inline-block; position: relative;">
+                                        <img src="Portfolio/assets/css/img/projects/appdev.png" alt="course2">
                                     </a>
                                 </div>
                                 <div class="project-overlay">
                                     <div class="project-content text-center">
                                         <h3 class="project-title"
-                                            style="margin-top: 10px; color: black; font-weight: bold;">AppDev and Emerging Technologies
+                                            style="margin-top: 10px; color: black; font-weight: bold;">AppDev and
+                                            Emerging Technologies
                                         </h3>
                                         <div class="project-more">
                                             <a class="main-btn" href="ADET/index.html">
@@ -397,8 +244,11 @@
                 </div>
             </footer>
 
-
+            <script src="Portfolio/assets/css/js/loader.js"></script>
+            <script src="Portfolio/assets/css/js/roles.js"></script>
             <script src="Portfolio/assets/css/js/animate-up.js"></script>
+            <script src="Portfolio/assets/css/js/services.js"></script>
+            <script src="Portfolio/assets/css/js/about-me.js"></script>
             <script src="https://kit.fontawesome.com/49a3347974.js" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
                 integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
