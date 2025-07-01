@@ -1,0 +1,975 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden !important;
+}
+
+@font-face {
+    font-family: Helvetica-Rounded;
+    src: url(../fonts/Helvetica-Rounded-Bold.otf);
+
+}
+
+.container-fluid,
+.row {
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.profile-section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.background img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-top: -60px;
+    margin-left: 250px;
+    background: #fff;
+
+}
+
+.fullname {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: -5px;
+    font-family: Helvetica-Rounded;
+}
+
+.username {
+    color: #777;
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: Helvetica;
+}
+
+.followers {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+}
+
+.edit-profile-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #FFFFFF;
+    background-color: #7091E6;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: Helvetica Rounded;
+}
+
+.edit-profile-btn:hover {
+    background: #0056b3;
+}
+
+.posts-section {
+    padding: 20px;
+    font-family: Helvetica Rounded;
+}
+
+.posts-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 250px;
+}
+
+.post {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    background-color: #ffffff;
+    overflow-y: hidden;
+}
+
+.left-column {
+    border-right: 1px solid #35D6ED;
+}
+
+.right-column {
+    height: 100vh;
+    border-left: 1px solid #35D6ED;
+}
+
+.middle-column {
+    height: 100vh;
+    flex: 2;
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.middle-column::-webkit-scrollbar {
+    width: 6px;
+}
+
+.middle-column::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 3px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    font-family: 'Helvetica Rounded', Helvetica, sans-serif;
+}
+
+.sidebar ul li {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+.nav-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.navIconHome {
+    font-size: 20px;
+}
+
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.footer-content p img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.footer svg.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.button-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.btn-create-post .button-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.btn-logout,
+.btn-create-post {
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Helvetica Rounded", Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
+.logout-container {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 33px;
+}
+
+.btn-logout {
+    background-color: #B23B3B;
+    width: 130px;
+    height: 40px;
+    align-items: center;
+}
+
+.btn-create-post {
+    background-color: #7091E6;
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+    position: relative;
+
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: 80px;/
+}
+
+.profile-section {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-pic1 {
+    position: absolute;
+    top: 75%;
+    ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-pic1 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    font-size: 20px;
+    font-family: "Helvetica Rounded";
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.fullname {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: Helvetica Rounded;
+}
+
+.username {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 5px;
+    font-family: Helvetica Rounded;
+
+}
+
+.followers {
+    font-size: 14px;
+    color: #666;
+    font-family: Helvetica Rounded;
+
+}
+
+.posts-section {
+    padding: 20px;
+    font-family: Helvetica Rounded;
+}
+
+.posts-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    text-align: center;
+
+}
+
+.header-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Helvetica Rounded', Helvetica, sans-serif;
+
+}
+
+.users-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #555;
+    font-family: 'Helvetica', Helvetica, sans-serif;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    background: #C9F6FF;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.user-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-info h6 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Helvetica Rounded', Helvetica, sans-serif;
+
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Helvetica Rounded', Helvetica, sans-serif;
+
+}
+
+
+.middle-search-bar input {
+    width: 90%;
+    height: 80%;
+    margin: 10px 30px;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+   
+}
+
+.middle-search-bar {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .middle-search-bar {
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+
+.right-search-bar input {
+    width: 100%;
+    height: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+}
+
+.announcement-box {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+    transition: overflow-y 0.3s ease;
+    scrollbar-gutter: stable;
+    padding-right: 10px; /* Prevent content from overlapping the scrollbar */
+}
+
+
+.announcement-box:hover {
+    overflow-y: auto; 
+}
+
+
+.announcement-box::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.announcement-box::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 3px;  
+}
+
+.announcement-box::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+}
+
+.announcement-box::-webkit-scrollbar-track {
+    background-color: #f1f1f1;  
+    border-radius: 3px;
+}
+
+
+.announcement-tab {
+    background-color: #C9F6FF;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.announcement-tab h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #06080F;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Helvetica Rounded', Arial, sans-serif;
+}
+
+.announcement-box .card {
+    flex: 0 0 auto;
+    height: 86px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.announcement-box .card h6 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.announcement-box .card p {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+}
+
+
+.footer {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 10px;
+    background-color: #ffffff;
+}
+
+.footer-content p {
+    margin-bottom: 8px;
+    margin-right: 5px;
+}
+
+.footer .footer-link {
+    font-size: 10px;
+}
+
+.footer svg.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.footer-content p a {
+    font-size: 10px;
+    color: #007bff;
+    text-decoration: none;
+    align-items: center;
+}
+
+.footer-content p a:hover {
+    text-decoration: underline;
+}
+
+
+.middle-column .navbar {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #35D6ED;
+}
+
+.middle-column .navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    height:70px;
+
+
+}
+
+.middle-column .nav-link {
+    font-family: 'Helvetica Rounded', sans-serif;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+/* .middle-column .nav-link.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+} */
+
+@media (max-width: 768px) {
+    .middle-column .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .middle-column .nav-link {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-create-post {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .announcement-box {
+        padding: 15px;
+    }
+
+    .announcement-tab {
+        padding: 12px;
+    }
+
+    .announcement-tab h5 {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .announcement-box {
+        padding: 10px;
+    }
+
+    .announcement-tab {
+        padding: 10px;
+    }
+
+    .announcement-tab h5 {
+        font-size: 10px;
+    }
+}
+
+
+.custom-card {
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    background-color: #C9F6FF;
+    border-color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.title-text {
+    font-size: 30px;
+    font-family: "Helvetica";
+    letter-spacing: 3px;
+}
+
+.body-text {
+    font-size: 15px;
+    font-family: "Helvetica";
+    letter-spacing: 1px;
+    line-height: 21px;
+}
+
+.profile-text {
+    font-size: 20px;
+    font-family: "Helvetica Rounded";
+}
+
+.bottom-buttons {
+    font-family: "Helvetica Rounded";
+    font-size: 15px;
+    color: #808080;
+    cursor: pointer;
+}
+
+.rate-text {
+    font-family: "Helvetica Rounded";
+    font-size: 15px;
+}
+
+.star-button:focus {
+    outline: none;
+}
+
+/* Default star appearance */
+.star-button img {
+    filter: brightness(1.5); /* Dimmed for unselected stars */
+    transition: filter 0.2s ease; /* Smooth transition */
+}
+
+/* Hover effect for visual feedback (left to right) */
+.star-button:hover img {
+    filter: brightness(0.5); /* Slightly brighter on hover */
+}
+
+/* Make all previous stars (to the left) brighter when hovering */
+.star-button:hover ~ .star-button img {
+    filter: brightness(0.4); /* Brighten all stars to the left of the hovered one */
+}
+
+/* When a star is selected, make it brighter */
+.star-button.selected img {
+    filter: brightness(0.1); /* Brighter for selected stars */
+    transition: filter 0.2s ease; /* Smooth transition */
+}
+
+/* Highlight all stars to the left of the selected one */
+.star-button.selected ~ .star-button img {
+    filter: brightness(0.5); /* Brighter for the stars to the left of selected */
+}
+
+.star-button {
+    margin-right: 6px; /* Adjust this value to control spacing */
+}
+
+.star.inactive {
+    filter: brightness(0.8);
+    transition: filter 0.2s ease;
+}
+  
+  /* Active state (highlighted stars) */
+.star.active {
+    filter: brightness(1.3);
+    transition: filter 0.2s ease;
+}
+
+
+.star-icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.star img {
+    filter: grayscale(100%) brightness(80%);
+}
+
+.star img.active {
+    filter: brightness(100%) saturate(100%) invert(22%) sepia(36%) saturate(408%) hue-rotate(195deg) brightness(98%) contrast(102%);
+}
+
+.star.inactive img {
+    filter: grayscale(100%) brightness(80%);
+}
+
+.stars {
+    display: inline-block;
+    margin-right: 8px;
+    width: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.icon-button.active {
+    filter: brightness(100%) saturate(100%) invert(22%) sepia(36%) saturate(408%) hue-rotate(195deg) brightness(98%) contrast(102%);
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bottom-buttons:hover {
+    color: #5a5a5a;
+}
+
+.comment-input-container {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.comment-card {
+    border-radius: 10px;
+    background-color: #e1faff;
+    border-color: #e1faff;
+}
+
+.comment p {
+    margin: 0;
+    font-size: 13px;
+    color: #333;
+
+}
+
+.comment-card-header {
+    background-color: #e1faff;
+}
+
+.modify-text{
+    display: inline;
+}
+
+@media (max-width: 1000px) {
+    .custom-card {
+        max-width: 100%;
+    }
+
+
+    .button-text {
+        font-size: 0;
+    }
+}
+
+@media (max-width: 995px) {
+    .custom-card {
+        max-width: 100%;
+    }
+
+    .bottom-buttons {
+        font-size: 0;
+    }
+
+    .button-text {
+        font-size: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .custom-card {
+        max-width: 100%;
+    }
+
+    .bottom-buttons {
+        font-size: 0;
+    }
+
+    .title-text {
+        font-size: 20px;
+    }
+
+    .body-text {
+        font-size: 13px;
+    }
+
+    .button-text {
+        font-size: 0;
+    }
+
+}
+
+
+
+@media (max-width: 576px) {
+    .custom-card {
+        max-width: 100%;
+    }
+
+    .title-text {
+        font-size: 24px;
+    }
+
+    .body-text {
+        font-size: 12px;
+    }
+
+    .bottom-buttons {
+        font-size: 0;
+    }
+
+    .btn-primary {
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .button-text {
+        font-size: 0;
+    }
+    .modify-text{
+        display: none; 
+    }
+
+}
+
+
+.background img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+    position: relative;
+
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: 80px;/
+}
+
+.profile-section {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-pic1 {
+    position: absolute;
+    top: 75%;
+    ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-pic1 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    font-size: 20px;
+    font-family: "Helvetica Rounded";
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.fullname {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: Helvetica Rounded;
+}
+
+.username {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 5px;
+    font-family: Helvetica Rounded;
+
+}
+
+.followers {
+    font-size: 14px;
+    color: #666;
+    font-family: Helvetica Rounded;
+
+}
+
+.posts-section {
+    padding: 20px;
+    font-family: Helvetica Rounded;
+}
+
+.posts-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}

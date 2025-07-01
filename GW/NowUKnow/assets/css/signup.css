@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Helvetica-Rounded;
+    src: url(../fonts/Helvetica-Rounded-Bold.otf);
+
+}
+
+.moveRight {
+    margin-left: 40px;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.headerSection {
+    margin-top: -120px;
+}
+
+.headerSection h1 {
+    text-align: start;
+    font-family: "Helvetica Rounded";
+    color: white;
+}
+
+.headerSection h6 {
+    text-align: start;
+    color: white;
+}
+
+.loginLink {
+    color: white;
+}
+
+.termsLink {
+    color: white;
+}
+
+.logoWordmark {
+    margin-bottom: 150px;
+    margin-left: -18px;
+}
+
+.logoWordmark img {
+    width: 310px;
+    height: auto;
+}
+
+.img-fluid {
+    margin-top: 30px;
+}
+
+.info {
+    text-align: left;
+    padding-top: 180px;
+}
+
+.info2 {
+    display: none;
+    text-align: left;
+}
+
+.btnLearnMore {
+    background-color: #000F24;
+    font-family: "Helvetica Rounded";
+    color: white;
+    border-radius: 200px;
+    width: 100%;
+    max-width: 200px;
+    height: 60px;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+}
+
+@media (max-width: 990px) {
+    .logoWordmark img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        object-fit: contain;
+        margin-top: 450px;
+    }
+
+    .logoWordmark {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 450px !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoWordmark img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        object-fit: contain;
+        margin-top: 80px;
+        padding-top: 400px;
+    }
+
+    .logoWordmark {
+        display: flex;
+        justify-content: center;
+    }
+
+    .headerSection {
+        order: 0;
+        display: none;
+        padding-bottom: 10px;
+        margin-top: -100px;
+    }
+
+    .card {
+        order: 1;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .info2 {
+        order: 3;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .info {
+        display: none;
+        text-align: left;
+    }
+
+    .btnLearnMore {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 990px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerSection {
+        order: 0;
+        display: none;
+    }
+
+    .card {
+        order: 1;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .info2 {
+        order: 2;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .btnLearnMore {
+        margin-top: 100px;
+    }
+}

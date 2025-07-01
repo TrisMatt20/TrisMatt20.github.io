@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Helvetica-Rounded;
+    src: url(../fonts/Helvetica-Rounded-Bold.otf);
+
+}
+
+.text {
+    padding-right: 40px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+
+}
+
+.forgotPassword {
+    font-size: 17px;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.headerSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: -110px;
+}
+
+.headerSection img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+}
+
+.nowUKnow img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.img-fluid {
+    margin-top: 30px;
+}
+
+.info {
+    text-align: left;
+}
+
+.info2 {
+    display: none;
+    text-align: left;
+}
+
+.btnLearnMore {
+    background-color: #000F24;
+    font-family: "Helvetica Rounded";
+    color: white;
+    border-radius: 200px;
+    width: 100%;
+    max-width: 206px;
+    height: 60px;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+}
+
+@media (max-width: 990px) {
+    .headerSection img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        object-fit: contain;
+        margin-top: 200px;
+    }
+
+    .NowUKnow {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card {
+        max-width: 450px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerSection {
+        order: 0;
+        display: none;
+        padding-bottom: 10px;
+        margin-top: 100px;
+    }
+
+    .card {
+        order: 1;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .info2 {
+        order: 3;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .info {
+        display: none;
+        text-align: left;
+    }
+
+    .btnLearnMore {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 990px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerSection {
+        order: 0;
+        display: none;
+        padding-bottom: 10px;
+        margin-top: 130px;
+    }
+
+    .card {
+        order: 1;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .info2 {
+        order: 2;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .btnLearnMore {
+        margin-top: 100px;
+    }
+}
