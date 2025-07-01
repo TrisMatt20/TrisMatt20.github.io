@@ -1,0 +1,83 @@
+/* GUEST NAVBAR */
+.navbar {
+    background-color: var(--bgColor);
+}
+
+.nav-link {
+    font-family: var(--heading);
+    font-weight: 500;
+    color: var(--primaryColor)
+}
+
+.nav-link:hover, .nav-link:active {
+    color: var(--primaryColorHover);
+}
+
+.navbar-toggler {
+    border: 0;
+    padding: 0px;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 2px #5c6bc03e, 0 0 0 3px var(--primaryColor) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%233F51B5' stroke-width='2.5' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: transform 0.3s ease;
+}
+
+/* ORGANIZER NAVBAR */
+.navbar-dark {
+    background-color: var(--primaryColor);
+}
+
+.navbar-dark .navbar-brand h4, .navbar-dark .nav-link {
+    color: white;
+}
+
+.navbar-dark .nav-link:hover, .navbar.dark .nav-link:focus {
+    color: var(--neutralColor);
+}
+
+.navbar-dark .navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 2px var(--neutralColor), 0 0 0 3px white !important;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2.5' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.profile-dropdown:hover, .profile-dropdown:active {
+  background-color: var(--primaryColorHover) !important;
+}
+
+/* OFFCANVAS NAVBAR */
+.offcanvas {
+    background-color: var(--primaryColor);
+}
+
+.offcanvas.show .nav-link, .offcanvas.show h4 {
+    color: white;
+}
+
+.navbar-dark .offcanvas {
+    background-color: var(--bgColor);
+}
+
+.navbar-dark .offcanvas.show .nav-link, .navbar-dark .offcanvas.show h4 {
+    color: var(--primaryColor) !important;
+}
+
+/* FOOTER */
+footer {
+    font-family: 'Poppins' !important;
+    color: white !important;
+    background-color: var(--primaryColor);
+}
+
+footer .nav .nav-item .nav-link {
+    color: white !important;
+}

@@ -1,0 +1,107 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* GENERAL STYLES */
+:root {
+	--heading: "Poppins", sans-serif;
+	--body: "Roboto", sans-serif;
+	--primaryColor: #3F51B5;
+	--primaryColorHover: #5C6BC0;
+	--neutralColor: #eeeeee;
+	--bgColor: #F0F1F6;
+}
+
+body {
+	background-color: var(--bgColor);
+}
+
+.logo {
+	max-width: 223px;
+	max-height: 63px;
+	margin-top: 30px;
+}
+
+.signupPanel {
+	background-color: var(--primaryColor);
+	border-radius: 20px 0 0 20px !important;
+}
+
+.loginPanel {
+	background-color: var(--primaryColor);
+	border-radius: 0 20px 20px 0 !important;
+}
+
+.words {
+	margin-top: 80px;
+}
+
+.title {
+	color: var(--primaryColor);
+	font-family: var(--heading);
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: clamp(2rem, 3.8vw, 4rem)
+}
+
+/* FORMS */
+.form-select,
+.form-control {
+	border-radius: 10px;
+	font-family: var(--body);
+	height: 60px;
+}
+
+.form-select:focus,
+.form-control:focus {
+	border-color: var(--primaryColorHover);
+	box-shadow: 0 0 0 0.25rem #5c6bc03e;
+}
+
+.label {
+	color: var(--primaryColor);
+	font-family: var(--heading);
+}
+
+/* BUTTON STYLES */
+.btn {
+    --bs-btn-font-family: var(--heading);
+    --bs-btn-border-radius: 10px;
+	text-align: center;
+	align-items: center;
+	font-size: clamp(1rem, 2vw, 2.5rem);
+	width: 200px;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--primaryColor);
+    --bs-btn-color: white !important;
+    --bs-btn-border-color: var(--primaryColor);
+    --bs-btn-hover-bg: var(--primaryColorHover);
+    --bs-btn-hover-border-color: var(--primaryColorHover);
+    --bs-btn-active-bg: var(--primaryColorHover);
+    --bs-btn-active-border-color: var(--primaryColorHover);
+}
+
+@media (max-width: 767px) {
+  .signupPanel {
+	border-radius: 20px 20px 0 0 !important;
+}
+}
+
+.greetings{
+	text-align: center;
+	color: var(--bgColor);
+	--bs-btn-font-family: var(--heading);
+	font-weight: bold;
+	font-size: clamp(2rem, 3.8vw, 4rem)
+}
+
+.tagline{
+	text-align: center;
+	color: var(--bgColor);
+	--bs-btn-font-family: var(--body);
+	font-size: clamp(1rem, 2vw, 2rem)
+}
+
