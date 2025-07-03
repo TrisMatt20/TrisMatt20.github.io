@@ -3,7 +3,7 @@ const roles = [
     "A PHP Developer",
     "A Front-End Dev",
     "A Back-End Dev",
-    "A Tech Enthusiast"
+    "A Tech Savvy"
 ];
 
 const typingElement = document.getElementById("typing-text");
