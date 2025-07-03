@@ -5,7 +5,7 @@ const aboutMe = {
       { icon: "fa-cake-candles", color: "#ffffff", text: "April 20, 2004" },
       { icon: "fa-phone", color: "#ededed", text: "Upon request" },
       { icon: "fa-envelope", color: "#ffffff", text: "tmtmatencio@gmail.com" },
-      { icon: "fa-location-dot", color: "#f7f7f7", text: "Trapiche, Tanauan City, Batangas" }
+      { icon: "fa-location-dot", color: "#f7f7f7", text: "Tanauan City, Batangas" }
     ]
   };
 
