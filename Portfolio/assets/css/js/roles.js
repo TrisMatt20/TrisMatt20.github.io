@@ -1,8 +1,8 @@
 const roles = [
     "Tristan Matthew",
     "A PHP Developer",
-    "A Full-Stack Dev",
-    "A Back-End Specialist"
+    "A Back-End Dev",
+    "A Student"
 ];
 
 const typingElement = document.getElementById("typing-text");

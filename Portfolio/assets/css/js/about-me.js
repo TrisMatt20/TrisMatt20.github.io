@@ -1,22 +1,26 @@
 const aboutMe = {
   name: "Tristan Matthew Matencio",
-  intro: `I’m a passionate 3rd-year Information Technology student at the Polytechnic University of the Philippines – Sto. Tomas. I specialize in full-stack web development, with a strong focus on back-end technologies. I’m passionate about building efficient, scalable, and user-centered applications through clean and reliable back-end systems. Continuously driven to grow and improve, I aim to deliver seamless digital solutions that balance performance and usability.`,
+  intro: `I’m a passionate 4th-year Information Technology student at the Polytechnic University of the Philippines – Sto. Tomas. I specialize in full-stack web development, with a strong focus on back-end technologies. I’m passionate about building efficient, scalable, and user-centered applications through clean and reliable back-end systems. Continuously driven to grow and improve, I aim to deliver seamless digital solutions that balance performance and usability.`,
   details: [
     { icon: "fa-cake-candles", color: "#ffffff", text: "April 20, 2004" },
     { icon: "fa-phone", color: "#ededed", text: "Upon request" },
     { icon: "fa-envelope", color: "#ffffff", text: "tmtmatencio@gmail.com" },
-    { icon: "fa-location-dot", color: "#f7f7f7", text: "Tanauan City, Batangas" }
-  ]
+    {
+      icon: "fa-location-dot",
+      color: "#f7f7f7",
+      text: "Tanauan City, Batangas",
+    },
+  ],
 };
 
 const skills = [
   { name: "HTML", icon: "fa-html5", color: "#3c00f0" },
   { name: "PHP", icon: "fa-php", color: "#b197fc" },
   { name: "JavaScript", icon: "fa-js", color: "#FFD43B" },
-  { name: "Java", icon: "fa-java", color: "#eb0000" }
+  { name: "Java", icon: "fa-java", color: "#eb0000" },
 ];
 
-// Render About Me 
+// Render About Me
 const aboutContent = document.getElementById("about-content");
 
 let aboutHTML = `
@@ -26,7 +30,7 @@ let aboutHTML = `
     <p style="text-align: justify; color: #ffffff;">${aboutMe.intro}</p>
     <ul class="clearfix">`;
 
-aboutMe.details.forEach(item => {
+aboutMe.details.forEach((item) => {
   aboutHTML += `
       <li>
         <div class="single-info d-flex align-items-center">
@@ -39,7 +43,7 @@ aboutMe.details.forEach(item => {
 aboutHTML += `</ul>`;
 aboutContent.innerHTML = aboutHTML;
 
-// Render Skills 
+// Render Skills
 const skillsContent = document.getElementById("skills-content");
 
 let skillsHTML = `
@@ -47,7 +51,7 @@ let skillsHTML = `
       <h3 class="about-skills" style="font-weight: bold; color: #ffffff; font-size: 30px;">Skills</h3>
     </div>`;
 
-skills.forEach(skill => {
+skills.forEach((skill) => {
   skillsHTML += `
       <div class="skill-item mt-25">
         <div class="single-info d-flex align-items-center">
